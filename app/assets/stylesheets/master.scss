@@ -5,16 +5,13 @@
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('pinkdust.png');
   color: white;
-
 }
 
 .navbar-inverse .navbar-brand {
-  font-family: 'fira_sansregular';
+  font-family: 'fira_sansmedium';
   color: white;
   font-size: 30px;
-
 }
-
 
 .hero {
   background: image_url('hero.jpg') no-repeat center center;
@@ -40,10 +37,29 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 .frosty h2 {
   font-family: 'fira_sansregular';
-  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-  
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;  
 } 
 
 .btn{
   border-radius: 0;
 }
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body {
+  background: image_url('bg.png');
+  font-family: 'fira_sansregular';
+}
+
+
+
+
+
+
+
+
+
+
