@@ -10,21 +10,18 @@ class Instructor::SectionsController < ApplicationController
   def create
     @section = current_course.sections.create(section_params)
     redirect_to instructor_course_path(current_course)
-
   end
 
   def update
-
     current_section.update_attributes(section_params)
     render plain: 'Updated!'
-
   end
 
   private
 
   def require_authorized_for_current_section
     if current_section.course.user != current_user
-      return render plain: 'Unauthorized', status: :unauthorized
+      render plain: 'Unauthorized', status: :unauthorized
     end
   end
 

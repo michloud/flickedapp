@@ -10,13 +10,11 @@ class Instructor::LessonsController < ApplicationController
   def create
     @lesson = current_section.lessons.create(lesson_params)
     redirect_to instructor_course_path(current_section.course)
-
   end
 
   def update
     current_lesson.update_attributes(lesson_params)
     render plain: 'Updated!'
-
   end
 
   private
